@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UNTREF School</title>
     <link rel="stylesheet" href="./css/master.css">
+    <link rel="icon" href="./img/pagina-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Poppins:ital,wght@1,100&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -13,39 +17,71 @@
         <!--NAVBAR y ENCABEZADO-->
         <header class="encabezado">
             <h1>UNTREF School</h1>
-            <!--Hacer logo con PS-->
             <figure class="logo">
-                <img src="" alt="">
+                <img src="./img/pagina-logo.svg" alt="" width="15%">
+                <span>UNTREF School</span>
             </figure>
             <nav class="menu">
                 <ul>
-                    <li> <a href="#">Quienes somos</a></li>
-                    <li> <a href="#">¿Por qué elegirnos?</a></li>
-                    <li> <a href="#">Propuesta Educativa</a></li>
-                    <li> <a href="#">Ultimas Noticias</a></li>
-                    <li> <a href="#"></a>Realice su consulta</li>
+                    <li> <a href="#quienes_somos">Quienes somos</a></li>
+                    <li> <a href="#elegirnos">¿Por qué elegirnos?</a></li>
+                    <li> <a href="#propuesta">Propuesta Educativa</a></li>
+                    <li> <a href="#ultimas_noticias">Ultimas Noticias</a></li>
                 </ul>
+                <button class="buton" onclick="location.href='./formulario.html'"><img src="./img/botonconsulta-icon.png" alt=""></button>
             </nav>
         </header>
         <!--CUERPO-->
         <section class=cuerpo_principal>
             <article id="quienes_somos"></article>
             <div>
-                <img src="" alt="">
+                <img src="./img/quienes_somos-img.jpg" alt="quienes somos-img" height="400" width="500">
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vel optio amet maiores repellendus aspernatur ipsum sit cumque velit inventore impedit aliquam quia laudantium hic molestiae, itaque ullam dolores doloribus. Pariatur fuga aliquid sint aspernatur esse repudiandae animi blanditiis, suscipit facere error eos odit molestias! Animi perferendis ab id soluta?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vel optio amet maiores
+                    repellendus aspernatur ipsum sit cumque velit inventore impedit aliquam quia laudantium hic
+                    molestiae, itaque ullam dolores doloribus. Pariatur fuga aliquid sint aspernatur esse repudiandae
+                    animi blanditiis, suscipit facere error eos odit molestias! Animi perferendis ab id soluta?</p>
             </div>
             <article id="elegirnos">
                 <div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate autem sapiente tempore, expedita itaque accusantium laborum, blanditiis mollitia incidunt ut ipsa ipsam, sed adipisci quo dolores iusto accusamus ullam architecto unde minus praesentium! Inventore sapiente, nam rem et harum quos alias est placeat cumque perspiciatis eveniet voluptate eius repudiandae quaerat.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate autem sapiente tempore,
+                        expedita itaque accusantium laborum, blanditiis mollitia incidunt ut ipsa ipsam, sed adipisci
+                        quo dolores iusto accusamus ullam architecto unde minus praesentium! Inventore sapiente, nam rem
+                        et harum quos alias est placeat cumque perspiciatis eveniet voluptate eius repudiandae quaerat.
+                    </p>
                 </div>
                 <div>
-                    <img src="" alt="">
+                    <img src="./img/elegirnos-img.jpg" alt="elegirnos-img" height="400" width="500">
                 </div>
             </article>
-            <article id="propuesta"></article>
-            <article id="ultimas_noticias"></article>
+            <!--TESTEAR MUCHO-->
+            <article id="propuesta">
+                <h2>Propuesta educativa</h2>
+                <div class="galeria">
+                    <div class="card">
+                        card 1
+                    </div>
+                    <div class="card">
+                        card 2
+                    </div>
+                    <div class="card">
+                        card 3
+                    </div>
+                    <div class="card">
+                        card 4
+                    </div>
+                    <div class="card">
+                        card 5
+                    </div>
+                </div>
+            </article>
+            <article id="ultimas_noticias">
+                <h2>Noticias UNTREF</h2>
+                <div></div>
+                <div></div>
+                <div></div>
+            </article>
         </section>
         <!--PIE DE PAGINA-->
         <footer class="piedepagina">
