@@ -1,20 +1,349 @@
+/*CSS Global*/
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: auto;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
-/*googlefonts:
-    font-family: 'Belanosima', sans-serif;
+img {
+    width: 100%;
+}
 
-    font-family: 'Poppins', sans-serif;
-    */
+ul {
+    list-style-type: none;
+}
+/*Navbar*/
+.logo {
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.menu {
+    text-align: center;
+}
+
+.boton {
+    background-color: #b2d5dc;
+}
+/*Cuerpo*/
+#quienes_somos {
+    padding: 0px 20px 50px 20px;
+}
+
+#elegirnos {
+    padding: 0px 20px 50px 20px;
+}
+
+#propuesta {
+    padding: 0px 10px 50px 10px;
+}
+
+#ultimas_noticias {
+    padding: 0px 20px 50px 20px;
+}
+
+/*footer*/
+.piepagina {
+    background-color: rgba(155, 155, 155, 0.3);
+    margin: auto;
+    padding: 0px 20px 70px 20px;
+}
 
 @media (min-width:320px) {
+    
+    /*Navbar*/
+    .encabezado {
+        display: grid;
+        grid-template-columns: 10% 90%;
+        place-items: center;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        font-family: 'Belanosima', sans-serif;
+        font-size: 12px;
+        z-index: 9999;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #opciones {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 0.75fr;
+        gap: 1px;
+    }
+
+    #menu-boton {
+        display: grid;
+        grid-template-columns: 2fr;
+    }
+
+    .boton {
+        cursor:pointer;
+        font-size: 14px;
+    }
+
+    /*Cuerpo*/
+    h1 {
+        text-align: center;
+    }
+
+    .cuerpo_principal {
+        width: auto;
+    }
+
+    #quienes_somos {
+        display: grid;
+        align-items: center;
+        width: auto;
+        gap: -20px;
+    }
+
+    /*Tarjetas de propuesta educativa*/
+    .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        height: 200px;
+        width: 400px;
+        margin: 10px;
+        box-shadow: 5px 5px 20px black;
+        overflow: hidden;
+    }
+
+    .img-card {
+        height: 200px;
+        width: 400px;
+        border: 3px;
+    }
+
+    .info {
+        height: auto;
+        width: auto;
+        padding: 4px;
+        box-sizing: border-box;
+        position: relative;
+        bottom: 200px;
+        background: rgba(48, 47, 47, 0.5);
+        color: white;
+    }
+
+    .card--info {
+        font-size: 14px;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    h4 {
+        text-transform: uppercase;
+    }
+    
+    .noticias--padre {
+        display: grid;
+        grid-template-rows: 10% 45% 45%;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        gap: 4px;
+        padding-top: 10px;
+    }
+
+    #noticias {
+        height: 950px;
+        padding: 4px 4px 4px 4px;
+        border: 1px solid black;
+        justify-content: center;
+        background-color: #fff8e1
+    }
+
+    /*Footer*/
+
+    .piepagina {
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #rrss-lista {
+        display: flex;
+        gap: 5px;
+    }
+
+    ion-icon {
+        font-size: 3rem;
+        color: blue;
+    }
+    
+}
+ 
+@media (min-width: 768px) {
+
+    /*navbar*/
+    .encabezado {
+        font-size: 16px;
+    }
+    /*Boton de Consulta*/
+    .boton {
+        font-size: 24px;
+    }
+
+    /*Tarjetas de propuesta educativa*/
+    .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        height: 200px;
+        width: 360px;
+        margin: 10px;
+        box-shadow: 5px 5px 20px black;
+        overflow: hidden;
+    }
+
+    .img-card {
+        height: 200px;
+        width: 400px;
+        border: 3px;
+    }
+
+    .info {
+        height: auto;
+        width: auto;
+        padding: 4px;
+        box-sizing: border-box;
+        position: relative;
+        bottom: 200px;
+        background: rgba(48, 47, 47, 0.5);
+        color: white;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    h4 {
+        text-transform: uppercase;
+    }
+
+    /*Footer*/
+
+    .piepagina {
+       display: flex;
+       align-items: stretch;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    #rrss-lista {
+        gap: 5px;
+    }
+
+    ion-icon {
+        font-size: 3rem;
+        color: blue;
+    }
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
 
+    .encabezado {
+        height: 110px
+    }
+
+    /*Tarjetas de propuesta educativa - mobile*/
+    /*FALTA QUE REACCIONE AL TAP Y QUEDE MOSTRANDO EL TEXTO*/
+    .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        height: 200px;
+        width: 400px;
+        margin: 10px;
+        box-shadow: 5px 5px 20px black;
+        overflow: hidden;
+    }
+
+    .img-card {
+        height: 200px;
+        width: 400px;
+        border: 3px;
+        transition: 0.5s;
+    }
+
+    .info {
+        height: 80px;
+        width: 400px;
+        padding: 6px;
+        box-sizing: border-box;
+        position: relative;
+        bottom: 200px;
+        background: rgb(27, 27, 27, .5);
+        color: white;
+        transition: 0.5s
+    }
+
+    .card--info {
+        font-size: 14px;
+        margin: 10px;
+        visibility: visible;
+        opacity: 0;
+        -webkit-user-select: none;/* Chrome  y Safari */ 
+        -moz-user-select: none;/* Firefox */
+        -ms-user-select: none;/* IE 10+ */ 
+         user-select: none;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    .card:hover {
+        cursor: pointer;
+    }
+
+    .card:hover .info {
+        height: 200px;
+        bottom: 200px;
+        background: black;
+    }
+
+    .card:hover .card--info {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .card:hover .img-card {
+        transform: scale(1.1);
+    }
 }

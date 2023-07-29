@@ -1,113 +1,178 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name= "Autor" content="Autor: Javier Ochoa">
+    <meta name="Descripción" content="Pagina de inicio de UNTREF School.">
     <title>UNTREF School</title>
     <link rel="stylesheet" href="./css/master.css">
     <link rel="icon" href="./img/pagina-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Poppins:ital,wght@1,100&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Poppins:ital,wght@0,300;0,400;0,600;1,100&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <div class="Contenedor">
-        <!--NAVBAR y ENCABEZADO-->
+        <!--Navbar-->
         <header class="encabezado">
-            <h1>UNTREF School</h1>
             <figure class="logo">
-                <img src="./img/pagina-logo.svg" alt="" width="15%">
-                <span>UNTREF School</span>
+                <a href="#"><img src="./img/UNTREF School logo.png" alt=""></a>
             </figure>
-            <nav class="menu">
-                <ul>
-                    <li> <a href="#quienes_somos">Quienes somos</a></li>
-                    <li> <a href="#elegirnos">¿Por qué elegirnos?</a></li>
-                    <li> <a href="#propuesta">Propuesta Educativa</a></li>
-                    <li> <a href="#ultimas_noticias">Ultimas Noticias</a></li>
-                </ul>
-                <button class="buton" onclick="location.href='./formulario.html'"><img src="./img/botonconsulta-icon.png" alt=""></button>
-            </nav>
+            <div class="menu">
+                <nav class="menu-opciones">
+                    <ul id="opciones">
+                        <li> <a href="index.html">¿Quienes somos?</a></li>
+                        <li> <a href="#elegirnos">¿Por qué elegirnos?</a></li>
+                        <li> <a href="#propuesta">Propuesta Educativa</a></li>
+                        <li> <a href="#ultimas_noticias">Ultimas Noticias</a></li>
+                    </ul>
+                </nav>
+                <nav id="menu-boton">
+                    <button class="boton" onclick="location.href='./formulario.html'">Realice su consulta</button>
+                </nav>
+            </div>
         </header>
-        <!--CUERPO-->
+        <h1>UNTREF School</h1>
+        <!--Cuerpo-->
         <section class=cuerpo_principal>
-            <article id="quienes_somos"></article>
-            <div>
-                <img src="./img/quienes_somos-img.jpg" alt="quienes somos-img" height="400" width="500">
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vel optio amet maiores
-                    repellendus aspernatur ipsum sit cumque velit inventore impedit aliquam quia laudantium hic
-                    molestiae, itaque ullam dolores doloribus. Pariatur fuga aliquid sint aspernatur esse repudiandae
-                    animi blanditiis, suscipit facere error eos odit molestias! Animi perferendis ab id soluta?</p>
-            </div>
+            <article id="quienes_somos">
+                <h2>¿Quienes Somos?</h2>
+                <img src="./img/quienes_somos-img.png" alt="quienes somos-img" id="quienes_somos--caja">
+                <p>Bienvenidos a la UNTREF. Una institución que produce, adquiere y otorga conocimiento de diversas
+                    maneras, para toda la comunidad. Donde la formación académica, la investigación y la extensión
+                    universitaria se fusionan, generando un vínculo con la sociedad en forma de educación, innovación,
+                    deporte, información, ciencia, arte y cultura. </p>
+            </article>
             <article id="elegirnos">
-                <div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate autem sapiente tempore,
-                        expedita itaque accusantium laborum, blanditiis mollitia incidunt ut ipsa ipsam, sed adipisci
-                        quo dolores iusto accusamus ullam architecto unde minus praesentium! Inventore sapiente, nam rem
-                        et harum quos alias est placeat cumque perspiciatis eveniet voluptate eius repudiandae quaerat.
-                    </p>
-                </div>
-                <div>
-                    <img src="./img/elegirnos-img.jpg" alt="elegirnos-img" height="400" width="500">
-                </div>
+                <h2>¿Por que elegirnos?</h2>
+                <img src="./img/elegirnos-img.jpg" alt="elegirnos-img">
+                <p>En el marco de su Plan Estratégico, la Universidad Nacional de Tres de Febrero ha desarrollado un
+                    significativo número de actividades de docencia, investigación y extensión, con un alto impacto
+                    académico y social.
+                    En términos de docencia, la oferta académica de la UNTREF alcanzó las 30 carreras de grado y 45 de
+                    posgrado. Con un número de estudiantes que supera los 12 mil. En modalidad a distancia, la UNTREF
+                    Virtual completa con 40 programas entre cursos, diplomaturas, tecnicaturas, licenciaturas,
+                    especializaciones y maestrías.
+                    El desarrollo de la producción de conocimiento en términos de investigación se concretó en 120
+                    líneas de investigación.
+                    Las áreas focalizadas de avance en docencia, investigación y extensión, se consolidaron en 20
+                    institutos, núcleos y centros.
+                    En concepto de Extensión, la UNTREF llevó adelante 65 cursos y talleres, con más de 1100
+                    participantes. Un capítulo especial de extensión lo constituyó el inicio de UNTREF Deportes con la
+                    presentación de UNTREF Voley que se consagró campeón de la Liga A2 y su consecuente ascenso a la
+                    liga máxima del voley nacional.</p>
             </article>
             <!--TESTEAR MUCHO-->
             <article id="propuesta">
                 <h2>Propuesta educativa</h2>
                 <div class="galeria">
                     <div class="card">
-                        card 1
+                        <img src="./img/img--tarjeta_arquitectura.jpg" alt="Arquitectura" class="img-card">
+                        <div class="info">
+                            <h3>Arquitectura</h3>
+                            <p class="card--info">Estudiando <span>Arquitectura</span>, vas a estar preparado/a para
+                                trabajar desde las técnicas constructivas basadas en la idea de la arquitectura como
+                                ciencia y como arte.</p>
+                        </div>
                     </div>
                     <div class="card">
-                        card 2
+                        <img src="./img/img--tarjeta_ingenieria.jpg" alt="Ingenieria Informatica" class="img-card">
+                        <div class="info">
+                            <h3>Ingenieria Informatica</h3>
+                            <p class="card--info">La <span>Ingeniería informática</span> es la rama de la ingeniería que
+                                aplica los fundamentos de la ciencia de la computación, la ingeniería en computadores,
+                                la ingeniería de sistemas de información.</p>
+                        </div>
                     </div>
                     <div class="card">
-                        card 3
+                        <img src="./img/img--tarjeta_medicina.jpg" alt="Medicina" class="img-card">
+                        <div class="info">
+                            <h3>Medicina</h3>
+                            <p class="card--info">La carrera de <span>Medicina</span> tiene como objetivo la formación
+                                de un médico general, entendiendo como tal a un profesional capacitado para resolver los
+                                problemas concernientes a la promoción, protección, recuperación y rehabilitación de la
+                                salud.</p>
+                        </div>
                     </div>
                     <div class="card">
-                        card 4
+                        <img src="./img/img--tarjeta_historia.jpeg" alt="Licenciatura en Historia" class="img-card">
+                        <div class="info">
+                            <h3>Licenciatura en Historia</h3>
+                            <p class="card--info">El objetivo de <span>la Licenciatura en Historia</span> es la
+                                graduación de historiadores con una solida formación en aspectos teóricos, y
+                                metodológicos orientados hacia la Argentina y América Latina.</p>
+                        </div>
                     </div>
                     <div class="card">
-                        card 5
+                        <img src="./img/img--tarjeta_comunicacion.jpeg" alt="Comunicacion Social" class="img-card">
+                        <div class="info">
+                            <h3>Comunicacion Social</h3>
+                            <p class="card--info"> <span>La Licenciatura en Comunicación Social</span> tiene por
+                                finalidad formar graduados para intervenir con solvencia teórica y práctica,
+                                y con discernimiento crítico, en el análisis, planificación y gestión de los diversos
+                                procesos de comunicación social.</p>
+                        </div>
                     </div>
                 </div>
             </article>
             <article id="ultimas_noticias">
                 <h2>Noticias UNTREF</h2>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="noticias--padre">
+                    <div id="noticias">
+                        <h4>¡Nuestra universidad sigue creciendo!</h4>
+                        <img src="./img/img-noticia_1.jpg" alt="Nuestra universidad crece">
+                        <p>2023 sigue perfilándose como el año de mayor crecimiento de UNTREF School con la mayor taza de inscripción del país. Informes reportan que un 23% de los inscriptos lo han hecho en la carrera de Arquitectura, un 15% en Comunicación Social, 17% en la licenciatura de Historia, 20% en Medicina y 25% en Ingeniería Informática. ¡Desde la editorial les damos la bienvenida a todxs!</p>
+                    </div>
+                    <div id="noticias">
+                        <h4>Terminadas las obras de accesibilidad en la sede de Caseros</h4>
+                        <p>Las obras de accesibilidad de la sede de Caseros han llegado a su fin y han sido inauguradas este fin de semana. A la inauguración asistieron tanto el rector de la universidad como el intendente de la ciudad. "¡Nadie quedara afuera de la educación publica!" comento el intendente.</p>
+                            <img src="./img/img-noticia_2.jpg" alt="Obras de accebilidad terminadas">
+                    </div>
+                    <div id="noticias">
+                        <h4>La educación NO se negocia</h4>
+                        <p>Una nueva jornada de protestas se vivieron en el día de ayer en repudio al porcentaje del presupuesto anual que el gobierno nacional destinara a la educación. Una gran multitud de personas se reunieron en la plaza de la ciudad para protestar en contra de un nuevo recorte a la educación de los argentinos.</p>
+                            <img src="./img/img-noticia_3.jpg" alt="La educacion NO se negocia">
+                    </div>
+                    <div id="noticias">
+                        <h4>A sala llena se vivio la 1ra jornada de teatro de UNTREF School</h4>
+                        <img src="./img/img-noticia_4.jpg" alt="Jornada exitosa de Teatro en UNTREF School">
+                        <p>"¡Pensamos que no iba a venir nadie!" comentaba Nahuel Martinez, alumno de Comunicacion social y creador del taller de teatro de UNTREF. La jornada de teatro independiente vivio un estreno exitoso de su primera obra tras llenar el anfiteatro de la universidad. Invitamos a todxs a asistir a los talleres de Teatro todos los sabados de 14 a 16hs. en el anfiteatro de la uni.</p>
+                    </div>
+                </div>
             </article>
         </section>
-        <!--PIE DE PAGINA-->
-        <footer class="piedepagina">
-            <div id="RRSS">
-                <h3>Siguenos</h3>
-                <ul>
-                    <li> <a href="https://www.facebook.com"></a>Facebook</li>
-                    <li> <a href="https://www.twitter.com.ar"></a>Twitter</li>
-                    <li> <a href="https://www.instagram.com"></a>Instagram</li>
+        <!--Pie de pagina-->
+        <footer class="piepagina">
+            <div id="rrss">
+                <h5>Siguenos</h5>
+                <ul id="rrss-lista">
+                    <li class="rrss-icons"> <a href="https://www.facebook.com" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li class="rrss-icons"> <a href="https://www.twitter.com" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li class="rrss-icons"> <a href="https://www.instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
                 </ul>
             </div>
             <div id="instituto">
-                <h3>Encuentranos</h3>
+                <h5>Encuentranos</h5>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26272.27839104799!2d-58.5814233135969!3d-34.60328154474217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb9f8ff113%3A0x22fd08da6711928d!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20-%20Sede%20Caseros%20I!5e0!3m2!1ses!2sar!4v1689573882568!5m2!1ses!2sar"
                     width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div id="contacto">
-                <h3>Contactanos</h3>
-                <a href="mailto:untreschool@edu.com.ar">untreschool@edu.com.ar</a>
+                <h5>Contactanos</h5>
+                <a href="mailto:untreschool@edu.com.ar">Mail: untreschool@edu.com.ar</a>
                 <br>
-                <a href="tel:011 4759-0040">011 4759-0040</a>
+                <a href="tel:011 4759-0040">Tel.: 011 4759-0040</a>
             </div>
         </footer>
     </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
