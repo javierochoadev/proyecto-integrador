@@ -1,9 +1,12 @@
 # proyecto-integrador
 Descripción: página de inicio de UNTREF School con formulario de consultas.
+
 Intención: principalmente intente lograr la web más completa (acorde a las consignas) con las ideas que se me fueron ocurriendo
 utilizando solo CSS, sé que bootstrap es una herramienta poderosa pero como proyecto integrador pensé que sería mejor trabajar
 con CSS puro.
+
 Autor: Javier Ochoa
+
 Funcionalidades:
  - Logo de UNTREF en navbar sirve para volver al inicio de la pagina
  - Las opciones de navbar dirigen a la sección correspondiente
